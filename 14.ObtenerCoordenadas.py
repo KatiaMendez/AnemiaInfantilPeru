@@ -7,6 +7,7 @@ from flask_mysqldb import MySQL
 from sqlalchemy import create_engine
 import pandas as pd
 import pyreadstat
+from APIS import obtenerAPI_GM
 
 # initializations
 app = Flask(__name__)
@@ -24,12 +25,13 @@ cur = con.cursor()
 
 def geolocalizar_provincia():
     df_bd_provincias = pd.read_sql_query('SELECT distinct provincia, departamen FROM db_nom_provdis', con=conexion)
-
+    df_bd_provincias = df_bd_provincias.head()
     for i in df_bd_provincias.index:
         provincia = str(df_bd_provincias.loc[i,'provincia'])
         region  = str(df_bd_provincias.loc[i,'departamen'])
-        place_provincia = provincia + ',' + region + ',PERÚ'     
-        url = 'https://maps.googleapis.com/maps/api/geocode/json?&address='+place_provincia+'%C3%BA&key=AIzaSyAY2ThK3p51AIV-9czncihRj7-brwadCZ4&'
+        place_provincia = provincia + ',' + region + ',PERÚ'
+        API_Key = obtenerAPI_GM()
+        url = 'https://maps.googleapis.com/maps/api/geocode/json?&address='+place_provincia+'%C3%BA&key='+API_Key+'&'
         req = requests.get(url)
         res = req.json()
         try: 
@@ -81,4 +83,4 @@ def geolocalizar_distrito():
 
 
 geolocalizar_provincia()
-geolocalizar_distrito()
+#geolocalizar_distrito()
