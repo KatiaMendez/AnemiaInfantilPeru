@@ -25,7 +25,7 @@ cur = con.cursor()
 
 def geolocalizar_provincia():
     df_bd_provincias = pd.read_sql_query('SELECT distinct provincia, departamen FROM db_nom_provdis', con=conexion)
-    df_bd_provincias = df_bd_provincias.head()
+    
     for i in df_bd_provincias.index:
         provincia = str(df_bd_provincias.loc[i,'provincia'])
         region  = str(df_bd_provincias.loc[i,'departamen'])
