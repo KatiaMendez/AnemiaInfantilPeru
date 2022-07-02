@@ -58,8 +58,8 @@ def geolocalizar_distrito():
         region  = str(df_bd_distritos.loc[i,'departamen'])
         distrito  = str(df_bd_distritos.loc[i,'distrito'])
         place_distrito = distrito + ',' + provincia + ',' + region + ',PERÚ'
-        
-        url = 'https://maps.googleapis.com/maps/api/geocode/json?&address='+place_distrito+'%C3%BA&key=AIzaSyAY2ThK3p51AIV-9czncihRj7-brwadCZ4&'
+        API_Key = obtenerAPI_GM()
+        url = 'https://maps.googleapis.com/maps/api/geocode/json?&address='+place_distrito+'%C3%BA&key='+API_Key+'&'
         print(url)
         req = requests.get(url)
         #print(req)
