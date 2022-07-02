@@ -1,2 +1,4 @@
-# IndiceAnemiaDatos
-Aquí se encuentra los códigos relacionados al proyecto de análisis de la anemia infantil en Perú.
+# Indice Anemia Infantil - Procesamiento de datos
+A través de los años, un ítem que se repite en la agenda del estado peruano es el planteamiento de planes de acción para hacer frente al alto índice de anemia. Hasta el año 2020 se registraba un valor igual o superior al 40%, lo cual nos ponía como un país con un problema severo de salud pública. Esta situación, aunada a la escasa información estructurada que se encuentra en las fuentes oficiales, no nos permite tener buena visibilidad sobre la problemática, ni como se está desplegando los planes de acción a lo largo de los años. 
+El presente repositorio es para aportar el código utilizado en el procesamiento de los datos de diferentes fuentes como lo son el INEI, con sus encuestas ENDES y RENAMU; MIDIS, con la información de los objetivos trazados para este tema y del MEF, de donde se obtuvo los gastos devengados de programas y productos relacionados. 
+La idea es poner a disposición del público en general para que funjan de input para investigaciones futuras.
