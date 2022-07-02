@@ -1,0 +1,56 @@
+CAMPO;ID;Nombre_ID
+HV104;1;Hombre
+HV104;2;Mujer
+HC57;1;Severa
+HC57;2;Moderada
+HC57;3;Leve
+HC57;4;Sin Anemia
+HV024;1;Amazonas
+HV024;2;Ancash
+HV024;3;Apurimac
+HV024;4;Arequipa
+HV024;5;Ayacucho
+HV024;6;Cajamarca
+HV024;7;Callao
+HV024;8;Cusco
+HV024;9;Huancavelica
+HV024;10;Huanuco
+HV024;11;Ica
+HV024;12;Junin
+HV024;13;La Libertad
+HV024;14;Lambayeque
+HV024;15;Lima
+HV024;16;Loreto
+HV024;17;Madre de Dios
+HV024;18;Moquegua
+HV024;19;Pasco
+HV024;20;Piura
+HV024;21;Puno
+HV024;22;San Martin
+HV024;23;Tacna
+HV024;24;Tumbes
+HV024;25;Ucayali
+HV025;1;Urbano
+HV025;2;Rural
+SHREGION;1;Lima metropolitana
+SHREGION;2;Resto Costa
+SHREGION;3;Sierra
+SHREGION;4;Selva
+SHREGION;5;Selva
+HV270;1;Los más pobres
+HV270;2;Pobre
+HV270;3;Medio
+HV270;4;Rico
+HV270;5;Más rico
+HC61;0;Sin educación
+HC61;1;Primaria
+HC61;2;Secundaria
+HC61;3;Superior
+HC61;8;No sabe
+HV109;0;Sin educación
+HV109;1;Primaria incompleta
+HV109;2;Primaria completa
+HV109;3;Secundaria incompleta
+HV109;4;Secundaria completa
+HV109;5;Superior
+HV109;8;No sabe
